@@ -153,19 +153,20 @@
   flex-direction: column;
 }
 
+
 @keyframes textColorCycle_name {
 
   0%,
   100% {
-    color: rgb(104, 104, 104);
+    color: rgb(200, 0, 211);
   }
 
   33% {
-    color: rgb(46, 33, 33);
+    color: rgb(230, 210, 0);
   }
 
   66% {
-    color: rgb(53, 0, 0);
+    color: rgb(0, 232, 213);
   }
 }
 
@@ -186,7 +187,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgb(59, 59, 59);
+  color: rgb(214, 214, 214);
   transition: 0.2s;
   font-size: 10px;
   font-weight: 700;
@@ -949,7 +950,7 @@
   white-space: nowrap;
   width: 80px;
   height: 35px;
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 700;
   font-family: 'Cabin', sans-serif;
   display: flex;
@@ -1526,13 +1527,11 @@ transform: scale(0.3);
   }
 
   .list_component {
-
     display: flex;
   }
 
   .sites_list li {
     padding: 0;
-
   }
 
   .list_title {
@@ -1544,8 +1543,6 @@ transform: scale(0.3);
     font-size: 8px;
     white-space: nowrap;
   }
-
-
 }
 
 
@@ -1730,6 +1727,7 @@ transform: scale(0.5);
     flex-direction: column;
     gap: 0;
   }
+
 
   .and_more_stuff {
     display: flex;

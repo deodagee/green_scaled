@@ -68,7 +68,7 @@ const Posts = () => {
         <FormControl id="category" isRequired>
           <FormLabel>Request Category</FormLabel>
           <Select
-            className="custom-select" // Add this class for styling
+            className="custom-select"
             value={category}
             onChange={(e) => setCategory(e.target.value)}
           >
@@ -95,8 +95,6 @@ const Posts = () => {
   </Container>
 </Layout>
 </div>
-
-
     </>
   );
 };
