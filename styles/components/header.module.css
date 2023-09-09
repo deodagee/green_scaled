@@ -22,8 +22,6 @@
 .parent {
   width: 100vw;
   z-index: 100;
-  background-color: #111b20;
-  animation: textColorCycle_name 6s infinite;
   color: white;
   display: flex;
   overflow: hidden;
@@ -32,25 +30,22 @@
 
 @keyframes textColorCycle_name {
 
-  100%,
-  50% {
-    transition: 0.2s;
-    background-color: #0d001e;
+  0%,
+  100% {
+    background-color: #f5f5f5;
   }
 
-  70% {
-    transition: 0.2s;
-    background-color: #001a1b;
+  33% {
+    background-color: #f3f3f3fb;
   }
 
-  50% {
-    transition: 0.2s;
-    background-color: #260000;
-
+  66% {
+    background-color: #f2f2f2c8;
   }
 }
 
 .parent_wrapper {
+  position: fixed;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -59,20 +54,22 @@
 }
 
 .logo__signature_and_button_parent {
+  animation: textColorCycle_name 6s infinite;
   margin-top: 0;
   display: flex;
   width: 100vw;
   justify-content: space-between;
   flex-direction: row;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .logo_and_signature {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: max-content;
-
 }
 
 .logo_item {
@@ -103,7 +100,7 @@
 
 .header_signature {
   margin-left: 10vw;
-  margin-top: -0px;
+  margin-top: 6px;
   transition: 0.5s;
 }
 
@@ -117,17 +114,18 @@
   gap: 1px;
   display: flex;
   flex-direction: column;
-  margin-top: 5px;
+  margin-top: 0px;
   align-items: center;
   justify-content: center;
 }
 
 .first_menubar {
+  box-shadow: rgb(201, 201, 201) 0px 0px 5px;
   border-left: none;
   border-right: none;
   border-bottom: none;
   border-color: rgb(255, 255, 255);
-  border-width: 0.5px;
+  border-width: 2px;
   gap: 8vw;
   width: 100vw;
   display: flex;
@@ -150,12 +148,13 @@
 .first_menubar p:hover {
   cursor: pointer;
   transition: 0.1s;
-  color: rgb(229, 229, 229);
+  color: rgb(255, 128, 0);
 }
 
 .first_menubar:hover {
+  color: rgb(240, 240, 240);
   transition: 0.4s;
-  background-color: rgb(211, 211, 211);
+  background-color: rgb(17, 22, 24);
 }
 
 .second_menubar {
@@ -180,13 +179,13 @@
   border-color: rgb(212, 212, 212);
   color: rgb(47, 57, 71);
   border-width: 1px;
-  box-shadow: rgb(72, 72, 72) 0px 0px 6px;
+  box-shadow: rgb(184, 184, 184) 0px 0px 6px;
 }
 
 .second_menubar:hover {
   transition: 0.05s;
-  color: rgb(224, 119, 0);
-  background-color: rgb(236, 236, 236);
+  color: rgb(255, 255, 255);
+  background-color: rgb(17, 22, 24);
 }
 
 .second_menubar p {
@@ -195,6 +194,7 @@
 
 .second_menubar p:hover {
   cursor: pointer;
+  color: rgb(255, 128, 0);
   transition: 0.4s;
   text-decoration: underline;
 }
@@ -212,6 +212,11 @@
   color: rgb(255, 255, 255);
 }
 
+.login_logout_list { 
+  display: flex;
+  flex-direction: row;
+}
+
 .register_button {
   color: rgb(61, 61, 61);
   white-space: nowrap;
@@ -223,16 +228,16 @@
   padding: 3px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: rgb(53, 23, 102);
+  background-color: rgb(9, 7, 48);
   border-radius: 0.99rem;
-  transition: 0.4s;
+  transition: 0.6s;
 }
 
 
 .register_button:hover {
-  color: rgb(237, 237, 237);
-  background-color: rgb(0, 186, 9);
-  transition: 0.4s;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  transition: 0.6s;
   box-shadow: white 0px 0px 5px;
 }
 
@@ -242,20 +247,20 @@
   margin-left: 10px;
   margin-bottom: 5px;
   border-width: 0.5px;
-  border-color: white;
+  border-color: rgb(255, 174, 0);
   width: max-content;
   padding: 3px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: rgb(0, 59, 98);
+  background-color: rgb(18, 39, 54);
   border-radius: 0.25rem;
-  transition: 0.4s;
+  transition: 0.6s;
 }
 
 
 .login_button:hover {
-  color: rgb(237, 237, 237);
-  background-color: rgb(0, 186, 9);
-  transition: 0.4s;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  transition: 0.6s;
   box-shadow: white 0px 0px 5px;
 }

@@ -4,7 +4,6 @@ import styles from "../../styles/components/pricing.module.css";
 import { useState } from "react";
 import Link from "next/link";
 
-
 function Pricing() {
 
   const [displayUI, setDisplayUI] = useState('group_52374');
@@ -20,6 +19,16 @@ function Pricing() {
   };
 
 
+  const togglePopup = () => {
+    const popup = document.getElementById("popup");
+    if (popup.style.display === "block") {
+      popup.style.display = "none";
+    } else {
+      popup.style.display = "block";
+    }
+  }
+
+
   return (
 
     <>
@@ -29,11 +38,82 @@ function Pricing() {
         <div className={styles.pricing_page_wrapper}>
 
 
-          <div>
+          <div className={styles.offered_list_and_top_main_header}>
 
+            <ol className={styles.top_main_header_and_paragraphs} >
+              <ul className={styles.top_main_header}>
+                <li>
+                  <h1 className={styles.top_main_header_header1}>Stellar Space Plans</h1>
+                </li>
+                <li>
+                  <h2 className={styles.top_main_header_header2}>Deals That Make Sense</h2>
+                </li>
+                <li>
+                  <Link className={styles.contact_page_link} href={'/contact'}><h2 className={styles.top_main_header_button}>Contact</h2></Link>
+                </li>
+              </ul>
+              <ul className={styles.top_main_paragraphs}>
+                <li>
+                  <Image
+                    className={styles.top_main_icons_target}
+                    width={50}
+                    height={50}
+                    alt="logo"
+                    src="/target.png"
+                  >
+                  </Image>
+                  <p className={styles.top_main_header_paragraph1}>Picking and Choosing</p>
+                  <p className={styles.top_main_header_paragraph2}>For Individuals and Businesses alike, if you need help picking a plan, send a request through the <Link className={styles.contact_page_link} href={"/contact"}>Contact</Link> page. Otherwise choose a plan, and click on "Get Started" to send me an order. This is not a payment gate; please allow  1-2 business days for a reply first, so we can get started.</p>
+                </li>
+                <li>
+                  <Image
+                    className={styles.top_main_icons_chip}
+                    width={50}
+                    height={50}
+                    alt="logo"
+                    src="/chip.png"
+                  >
+                  </Image>
+                  <p className={styles.top_main_header_paragraph1}>Payments</p>
+                  <p className={styles.top_main_header_paragraph2}>You don't pay anything until we've got your plans sorted out. This means that until you have the rough design in your hands, you don't have to worry about spending a dime. Click <button onClick={togglePopup}> <p className={styles.contact_page_link}> Rough Designs</p></button> for more information.</p>
+                  
+                  <p id="popup" className={styles.popup}>
+                    <p className={styles.popupContent}>
+                    Rough Design: It consists of a visual blueprint, depicting the basic elements, design and layout of the project. With stellarspace, your rough design comes free of charge. You may request html, javascript , css, png, pdf, doc, .blend , .wav, mp3, type files and more. Please alow up to 3 business days for a rough design to be send out back to you.
+                    </p>
+                    <button  onClick={togglePopup}> <p className={styles.button_toggle_close_paragraph}>Close </p></button>
+                  </p>
+                </li>
+                <li>
+                  <Image
+                    className={styles.top_main_icons_mountain}
+                    width={50}
+                    height={50}
+                    alt="logo"
+                    src="/mountain.png"
+                  >
+                  </Image>
+                  <p className={styles.top_main_header_paragraph1}>Premium plans</p>
+                  <p className={styles.top_main_header_paragraph2}> <Link className={styles.contact_page_link} href={"/eplus"}> Premium </Link> plans for those that need more. Cover yourself with at least 8GB of ram space.</p>
+                </li>
+                <li>
+                  <Image
+                    className={styles.top_main_icons_features}
+                    width={50}
+                    height={50}
+                    alt="logo"
+                    src="/gears.png"
+                  >
+                  </Image>
+                  <p className={styles.top_main_header_paragraph1}>Features</p>
+                  <p className={styles.top_main_header_paragraph2}>Get all the features listed, and more. Please send any specian requests through the <Link className={styles.contact_page_link} href={"/contact"}>contact</Link> page</p>
+                </li>
+              </ul>
+
+            </ol>
             <ul className={styles.offered_list}>
-            <Link href={"/services"}>
-              <li className={styles.offered_item}>
+              <Link href={"/services"}>
+                <li className={styles.offered_item}>
                   <Image
                     className={styles.logo_ssl_logo}
                     width={50}
@@ -42,83 +122,91 @@ function Pricing() {
                     src="/bgwhole7.jpg"
                   >
                   </Image>
-                  </li>
-                  <Link href={"/sslsecurity"}>
-                      <p className={styles.more_tag}> SSL Security</p>
-                      </Link>              </Link>
+                </li>
+                <Link href={"/sslsecurity"}>
+                  <p className={styles.more_tag}> SSL Security</p>
+                </Link>              </Link>
 
-
-                <Link href={"/services"}>
-              <li className={styles.offered_item}>
-                  <Image
-                    className={styles.logo_ssl_logo}
-                    width={50}
-                    height={50}
-                    alt="logo"
-                    src="/logored.png"
-                  >
-                  </Image>
-                  </li>
-                  <Link href={"/privatedomains"}>
-                      <p className={styles.more_tag}>Private Domains</p>
-                      </Link>              </Link>
 
               <Link href={"/services"}>
-              <li className={styles.offered_item}>
+                <li className={styles.offered_item}>
                   <Image
                     className={styles.logo_ssl_logo}
                     width={50}
                     height={50}
                     alt="logo"
-                    src="/logored.png"
+                    src="/bgwhole7.jpg"
                   >
                   </Image>
-                  </li>
-                  <Link
-                      href={"/originalcode"}>
-                      <p className={styles.more_tag}> Original Code</p>
-                      </Link>              </Link>
+                </li>
+                <Link href={"/privatedomains"}>
+                  <p className={styles.more_tag}>Private Domains</p>
+                </Link>              </Link>
 
               <Link href={"/services"}>
-              <li className={styles.offered_item}>
+                <li className={styles.offered_item}>
                   <Image
                     className={styles.logo_ssl_logo}
                     width={50}
                     height={50}
                     alt="logo"
-                    src="/logored.png"
+                    src="/bgwhole7.jpg"
                   >
                   </Image>
-                  </li>
+                </li>
+                <Link
+                  href={"/originalcode"}>
+                  <p className={styles.more_tag}> Copyright Code</p>
+                </Link>              </Link>
+
+              <Link href={"/services"}>
+                <li className={styles.offered_item}>
+                  <Image
+                    className={styles.logo_ssl_logo}
+                    width={50}
+                    height={50}
+                    alt="logo"
+                    src="/bgwhole7.jpg"
+                  >
+                  </Image>
+                </li>
                 <p className={styles.more_tag}>Payment Gates</p>
               </Link>
 
             </ul>
-
-
           </div>
 
           <div className={styles.pricing_headers_list_wrapper}>
             <ul className={styles.pricing_headers_list}>
+                <Link href={'/static'}>
               <li className={styles.tab_1}>
                 <p>Static</p>
               </li>
+              </Link>
               <span className={styles.seperator_line}></span>
+              <Link href={'/dynamic'}>
               <li className={styles.tab_2}>
                 <p>Dynamic</p>
               </li>
+              </Link>
               <span className={styles.seperator_line}></span>
+              <Link href={'/dynamicplus'}>
               <li className={styles.tab_3}>
                 <p>Dynamic Plus</p>
               </li>
+              </Link>
               <span className={styles.seperator_line}></span>
+              <Link href={'/ecommerce'}>
               <li className={styles.tab_4}>
                 <p>Ecommerce</p>
               </li>
+              </Link>
               <span className={styles.seperator_line}></span>
+              <Link href={'/eplus'}>
               <li className={styles.tab_5}>
                 <p>E-Plus</p>
               </li>
+              </Link>
             </ul>
           </div>
 
@@ -171,7 +259,7 @@ function Pricing() {
 
 
               <div className={styles.pricing_tab_groups_wrapper}>
-                
+
                 <div className={styles.pricing_tab_group_1}>
                   {displayUI === 'group_52374' && (
                     <div className={styles.group_52374}>
@@ -261,7 +349,7 @@ function Pricing() {
                                     />
                                   </svg>
                                 </div>
-                                <div className={styles.your_session_has_tim5}>650</div>
+                                <div className={styles.your_session_has_tim5}>200</div>
                               </div>
                               <div className={styles.component_6}>
                                 <button className={styles.label}> <Link href={"/pricing"}>Get Started </Link> </button>
@@ -352,7 +440,7 @@ function Pricing() {
                                   />
                                 </svg>
                               </div>
-                              <div className={styles.your_session_has_tim5}>850</div>
+                              <div className={styles.your_session_has_tim5}>300</div>
                             </div>
 
                             <div className={styles.dynamic_get_started}>
@@ -442,7 +530,7 @@ function Pricing() {
                                   />
                                 </svg>
                               </div>
-                              <div className={styles.your_session_has_tim5}>650</div>
+                              <div className={styles.your_session_has_tim5}>350</div>
                             </div>
                             <div className={styles.dynamic_get_started}>
                               <div className={styles.component_6}>
@@ -531,7 +619,7 @@ function Pricing() {
                                   />
                                 </svg>
                               </div>
-                              <div className={styles.your_session_has_tim5}>1050</div>
+                              <div className={styles.your_session_has_tim5}>400</div>
                             </div>
                             <div className={styles.component_6}>
                               <button className={styles.label}> <Link href={"/ecommerce"}>Get Started</Link> </button>
@@ -815,7 +903,7 @@ function Pricing() {
                                   />
                                 </svg>
                               </div>
-                              <div className={styles.your_session_has_tim5}>850</div>
+                              <div className={styles.your_session_has_tim5}>500</div>
                             </div>
 
                             <div className={styles.dynamic_get_started}>
@@ -906,7 +994,7 @@ function Pricing() {
                                   />
                                 </svg>
                               </div>
-                              <div className={styles.your_session_has_tim5}>650</div>
+                              <div className={styles.your_session_has_tim5}>550</div>
                             </div>
                             <div className={styles.dynamic_get_started}>
                               <div className={styles.component_6}>
@@ -995,7 +1083,7 @@ function Pricing() {
                                   />
                                 </svg>
                               </div>
-                              <div className={styles.your_session_has_tim5}>1050</div>
+                              <div className={styles.your_session_has_tim5}>600</div>
                             </div>
                             <div className={styles.component_6}>
                               <button className={styles.label}> <Link href={"/ecommerce"}>Get Started</Link> </button>

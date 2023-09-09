@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "../../styles/components/footer.module.css";
+import Link from "next/link";
 
 function Footer() {
   return (
@@ -34,34 +35,38 @@ function Footer() {
           <ul className={styles.list_sections}>
           <li className={styles.section}>
             <div className={styles.pagesLinksServices}>
-              <div className={styles.sectionTitle}>Pages</div>
+              <div className={styles.sectionTitle}>Tools</div>
               <ul className={styles.list}>
-                <li className={styles.item}>Open Ai</li>
-                <li className={styles.item}>Blender 3D</li>
-                <li className={styles.item}>Visual Studio</li>
-                <li className={styles.item}>Fl Studio</li>
+                <Link href={"https://openai.com/"}>
+                <li className={styles.item}>Open Ai</li></Link>
+                <Link href={"https://www.blender.org/"}>
+                <li className={styles.item}>Blender 3D</li></Link>
+                <Link href={"https://visualstudio.microsoft.com/vs/professional/"}>
+                <li className={styles.item}>Visual Studio</li></Link>
+                <Link href={"https://www.image-line.com/fl-studio/"}>
+                <li className={styles.item}>Fl Studio</li></Link>
               </ul>
             </div>
           </li>
           <li className={styles.section}>
             <div className={styles.pagesLinksServices}>
-              <div className={styles.sectionTitle}>Helpful Links</div>
+              <div className={styles.sectionTitle}>Page Links</div>
               <ul className={styles.list}>
-                <li className={styles.item}>Open Ai</li>
-                <li className={styles.item}>Blender 3D</li>
-                <li className={styles.item}>Visual Studio</li>
-                <li className={styles.item}>Fl Studio</li>
+                <li className={styles.item}>Home</li>
+                <li className={styles.item}>Contact</li>
+                <li className={styles.item}>Pricing</li>
+                <li className={styles.item}>Source Code</li>
               </ul>
             </div>
           </li>
           <li className={styles.section}>
             <div className={styles.pagesLinksServices}>
-              <div className={styles.sectionTitle}>Services</div>
+              <div className={styles.sectionTitle}>Other Links</div>
               <ul className={styles.list}>
-                <li className={styles.item}>Open Ai</li>
-                <li className={styles.item}>Blender 3D</li>
-                <li className={styles.item}>Visual Studio</li>
-                <li className={styles.item}>Fl Studio</li>
+                <li className={styles.item}>Front End</li>
+                <li className={styles.item}>Back End</li>
+                <li className={styles.item}>Databases</li>
+                <li className={styles.item}>Audio Mixing</li>
               </ul>
             </div>
           </li>

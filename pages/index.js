@@ -10,7 +10,7 @@ function Home() {
   return (
     <>
 
-    <div className={styles.index_index}>
+    <div className={styles.main_whole}>
       <Header></Header>
 
       <div className={styles.body_index}>

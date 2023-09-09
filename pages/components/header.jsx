@@ -18,27 +18,27 @@ function Header() {
           <ol className={`${styles.logo__signature_and_button_parent} ${xsmStyles.logo__signature_and_button_parent_xsm}`}>
 
 
-            <ul className={styles.logo_and_signature}>
-            <li className={`${styles.logo_item} ${xsmStyles.logo_item_xsm}`}>
-              <Image
-                className={`${styles.header_logo} ${xsmStyles.header_logo_xsm}`} alt="logo"
-                width={50}
-                height={50}
-                src={"/logored.png"}
-              >
-              </Image>
-            </li>
+            <ul className={`${styles.logo_and_signature} ${xsmStyles.logo_and_signature_xsm}`}>
+              <li className={`${styles.logo_item} ${xsmStyles.logo_item_xsm}`}>
+                <Image
+                  className={`${styles.header_logo} ${xsmStyles.header_logo_xsm}`} alt="logo"
+                  width={50}
+                  height={50}
+                  src={"/logored.png"}
+                >
+                </Image>
+              </li>
 
-            <li className={styles.signature_item}>
-              <Image
-                className={`${styles.header_signature} ${xsmStyles.header_signature_xsm}`} aria-label="signature"
-                alt="signature"
-                width={90}
-                height={90}
-                src={"/signaturewhite.png"}
-              >
-              </Image>
-            </li>
+              <li className={styles.signature_item}>
+                <Image
+                  className={`${styles.header_signature} ${xsmStyles.header_signature_xsm}`} aria-label="signature"
+                  alt="signature"
+                  width={90}
+                  height={90}
+                  src={"/signatureblack.png"}
+                >
+                </Image>
+              </li>
             </ul>
 
 
@@ -47,23 +47,23 @@ function Header() {
               <ul className={styles.login_logout_list}>
                 {session ? (
                   <>
-                  <li className={styles.register_button_item}>
-                    <button className={`${styles.logout_button_item} ${xsmStyles.register_button_xsm}`} onClick={() => signOut('github')()}>
-                      <p>Logout</p>
-                    </button>
+                    <li className={styles.register_button_item}>
+                      <button className={`${styles.logout_button_item} ${xsmStyles.register_button_xsm}`} onClick={() => signOut('github')()}>
+                        <p>Logout</p>
+                      </button>
                     </li>
                   </>
                 ) : (
                   <>
-                  <li className={styles.logout_button_item}>
-                    <button className={`${styles.login_button} ${xsmStyles.login_button_xsm}`} onClick={() => signIn('google')}>
-                      <p>GitHub signIn</p>
-                    </button>
+                    <li className={styles.logout_button_item}>
+                      <button className={`${styles.login_button} ${xsmStyles.login_button_xsm}`} onClick={() => signIn('google')}>
+                        <p>GitHub signIn</p>
+                      </button>
                     </li>
                     <li className={styles.logout_button_item}>
-                    <button className={`${styles.login_button} ${xsmStyles.login_button_xsm}`} onClick={() => signIn('github')}>
-                      <p>Google signIn</p>
-                    </button>
+                      <button className={`${styles.login_button} ${xsmStyles.login_button_xsm}`} onClick={() => signIn('github')}>
+                        <p>Google signIn</p>
+                      </button>
                     </li>
                   </>
                 )}
@@ -78,29 +78,39 @@ function Header() {
 
             <ul className={`${styles.first_menubar} ${xsmStyles.first_menubar_xsm}`}>
               <li className={styles.first_menubar_item}>
-                <p className={styles.promo1}>
-                  Private Domains
-                </p>
+                <Link href={'/sources'}>
+                  <p className={styles.promo1}>
+                    Private Domains
+                  </p>
+                </Link>
               </li>
               <li className={styles.first_menubar_item}>
-                <p className={styles.promo2}>
-                  Dall-E Engines
-                </p>
+                <Link href={'/sources'}>
+                  <p className={styles.promo2}>
+                    Dall-E Engines
+                  </p>
+                </Link>
               </li>
               <li className={styles.first_menubar_item}>
+              <Link href={'/sources'}>
                 <p className={styles.promo3}>
                   3D Renders
                 </p>
+                </Link>
               </li>
               <li className={styles.first_menubar_item}>
+              <Link href={'/sources'}>
                 <p className={styles.promo4}>
                   Wix?
                 </p>
+                </Link>
               </li>
               <li className={styles.first_menubar_item}>
+              <Link href={'/sources'}>
                 <p className={styles.promo4}>
                   Hostgator?
                 </p>
+                </Link>
               </li>
 
             </ul>

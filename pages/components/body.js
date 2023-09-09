@@ -224,80 +224,80 @@ function Body() {
               <ul className={styles.tabber_wrapper}>
 
 
-                  <li className={styles.description_item}>
-                    <p class={styles.description}>
-                      I specialize in crafting immersive websites and applications that resonate with your target audience. Deliver cost-effective options that rival mainstream applications. Empower yourself with easy and affordable access to web services, apps, designs, and blueprints.
-                    </p>
-                  </li>
+                <li className={styles.description_item}>
+                  <p class={styles.description}>
+                    I specialize in crafting immersive websites and applications that resonate with your target audience. Deliver cost-effective options that rival mainstream applications. Empower yourself with easy and affordable access to web services, apps, designs, and blueprints.
+                  </p>
+                </li>
 
-                  <ul className={styles.bio_item}>
+                <ul className={styles.bio_item}>
 
-                    <h1 className={styles.bio_header}>Bio & Skills</h1>
-                    <h1 className={styles.bio_tag}>Skills<span></span></h1>
+                  <h1 className={styles.bio_header}>Bio & Skills</h1>
+                  <h1 className={styles.bio_header2}>Skills</h1>
 
-                    <h1 className={styles.bio_tag}>2017<span>Diploma - Network Admin | CCNA, CCNP, & NET+</span></h1>
-                    <h1 className={styles.bio_tag}>JAVASCRIPT<span>JavaScript is a versatile scripting language primarily used for adding interactivity and dynamic behavior to websites.</span></h1>
-                    <h1 className={styles.bio_tag}>HTML<span>HTML is the language for structuring web content. </span></h1>
-                    <h1 className={styles.bio_tag}>CSS<span>CSS is used to style and design how that content looks.</span></h1>
-                    <h1 className={styles.bio_tag}>NextJs<span>Next.js is a React-based framework that provides development experience for building server-rendered, statically generated, and dynamically serving web applications.</span></h1>
-                    <h1 className={styles.bio_tag}>SQL<span>SQL (Structured Query Language) is a programming language used for managing and manipulating relational databases.</span></h1>
-                    <h1 className={styles.bio_tag}>PHP<span>PHP is a server-side scripting language commonly used for web development to create dynamic and interactive web applications.</span></h1>
-                  </ul>
-
-
+                  <h1 className={styles.bio_tag}><p className={styles.bio_side_tag}>2017</p><span>Diploma - Network Admin | CCNA, CCNP, & NET+</span></h1>
+                  <h1 className={styles.bio_tag}><p className={styles.bio_side_tag}>JAVASCRIPT</p><span>JavaScript is a versatile scripting language primarily used for adding interactivity and dynamic behavior to websites.</span></h1>
+                  <h1 className={styles.bio_tag}><p className={styles.bio_side_tag}>HTML</p><span>HTML is the language for structuring web content. </span></h1>
+                  <h1 className={styles.bio_tag}><p className={styles.bio_side_tag}>CSS</p><span>CSS is used to style and design how that content looks.</span></h1>
+                  <h1 className={styles.bio_tag}><p className={styles.bio_side_tag}>NextJs</p><span>Next.js is a React-based framework that provides development experience for building server-rendered, statically generated, and dynamically serving web applications.</span></h1>
+                  <h1 className={styles.bio_tag}><p className={styles.bio_side_tag}>SQL</p><span>SQL (Structured Query Language) is a programming language used for managing and manipulating relational databases.</span></h1>
+                  <h1 className={styles.bio_tag}><p className={styles.bio_side_tag}>PHP</p><span>PHP is a server-side scripting language commonly used for web development to create dynamic and interactive web applications.</span></h1>
+                </ul>
 
 
-                  <ul className={styles.tabber_buttons_list}>
 
-                    <li className={styles.table_item}>
-                      <Link 
+
+                <ul className={styles.tabber_buttons_list}>
+
+                  <li className={styles.table_item}>
+                    <Link
                       href={"/services"}>
                       <button className={styles.services_more_button}>
                         <p>Services {" >"}</p>
                       </button>
-                      </Link>
-                    </li>
-                    <li className={styles.table_item}>
-                      <Link 
+                    </Link>
+                  </li>
+                  <li className={styles.table_item}>
+                    <Link
                       href={"/prices"}>
                       <button className={styles.prices_more_button}>
                         <p>Prices {" >"}</p>
                       </button>
-                      </Link>
-                    </li>
-                    <li className={styles.table_item}>
-                      <Link
+                    </Link>
+                  </li>
+                  <li className={styles.table_item}>
+                    <Link
                       href={"/contact"}>
                       <button className={styles.contact_more_button}>
                         <p>Contact {" >"}</p>
                       </button>
-                      </Link>
-                    </li>
-                    <li className={styles.table_item}>
-                      <Link
+                    </Link>
+                  </li>
+                  <li className={styles.table_item}>
+                    <Link
                       href={"/projects"}>
                       <button className={styles.projects_more_button}>
                         <p>Projects {" >"}</p>
                       </button>
-                      </Link>
-                    </li>
-                    <li className={styles.table_item}>
-                      <Link
+                    </Link>
+                  </li>
+                  <li className={styles.table_item}>
+                    <Link
                       href={"/more"}>
                       <button className={styles.more_more_button}>
                         <p>More {" >"}</p>
                       </button>
-                      </Link>
-                    </li>
-                  </ul>
-                  <ul>
-                  <li class={styles.thank_you}>
-                      <p >Thank you for visiting astrumstellar.com!</p>
-                    </li>
-                    </ul>
-
-
+                    </Link>
+                  </li>
                 </ul>
+                <ul>
+                  <li class={styles.thank_you}>
+                    <p >Thank you for visiting astrumstellar.com!</p>
+                  </li>
+                </ul>
+
+
+              </ul>
             </ol>
 
 
@@ -459,7 +459,7 @@ function Body() {
 
                 <ol className={styles.and_more_stuff}>
                   <ul>
-                  <h1 className={styles.perks_header}>Perks Included:</h1>
+                    <h1 className={styles.perks_header}>Perks Included:</h1>
                   </ul>
 
                   <ul className={styles.offered_list}>
@@ -471,12 +471,12 @@ function Body() {
                           width={50}
                           height={50}
                           alt="logo"
-                          src="/logored.png"
+                          src="/bgwhole12.jpg"
                         >
                         </Image>
                       </Link>
                       <Link href={"/sslsecurity"}>
-                      <p className={styles.more_tag}> SSL Security</p>
+                        <p className={styles.more_tag}> SSL Security</p>
                       </Link>
                     </li>
 
@@ -488,12 +488,12 @@ function Body() {
                           width={50}
                           height={50}
                           alt="logo"
-                          src="/logored.png"
+                          src="/bgwhole12.jpg"
                         >
                         </Image>
                       </Link>
                       <Link href={"/privatedomains"}>
-                      <p className={styles.more_tag}>Private Domains</p>
+                        <p className={styles.more_tag}>Private Domains</p>
                       </Link>
                     </li>
 
@@ -504,13 +504,13 @@ function Body() {
                           width={50}
                           height={50}
                           alt="logo"
-                          src="/logored.png"
+                          src="/bgwhole12.jpg"
                         >
                         </Image>
                       </Link>
                       <Link
-                      href={"/originalcode"}>
-                      <p className={styles.more_tag}> Original Code</p>
+                        href={"/originalcode"}>
+                        <p className={styles.more_tag}> Original Code</p>
                       </Link>
                     </li>
                   </ul>
@@ -521,30 +521,39 @@ function Body() {
             <div className={styles.pricing_page}>
               <div className={styles.pricing_page_wrapper}>
 
-                <div className={styles.pricing_headers_list_wrapper}>
-                  <ul className={styles.pricing_headers_list}>
-                    <li className={styles.tab_1}>
-                      <p>Static</p>
-                    </li>
-                    <span className={styles.seperator_line}></span>
-                    <li className={styles.tab_2}>
-                      <p>Dynamic</p>
-                    </li>
-                    <span className={styles.seperator_line}></span>
-                    <li className={styles.tab_3}>
-                      <p>Dynamic Plus</p>
-                    </li>
-                    <span className={styles.seperator_line}></span>
-                    <li className={styles.tab_4}>
-                      <p>Ecommerce</p>
-                    </li>
-                    <span className={styles.seperator_line}></span>
-                    <li className={styles.tab_5}>
-                      <p>E-Plus</p>
-                    </li>
-                  </ul>
-                </div>
-
+              <div className={styles.pricing_headers_list_wrapper}>
+            <ul className={styles.pricing_headers_list}>
+                <Link href={'/static'}>
+              <li className={styles.tab_1}>
+                <p>Static</p>
+              </li>
+              </Link>
+              <span className={styles.seperator_line}></span>
+              <Link href={'/dynamic'}>
+              <li className={styles.tab_2}>
+                <p>Dynamic</p>
+              </li>
+              </Link>
+              <span className={styles.seperator_line}></span>
+              <Link href={'/dynamicplus'}>
+              <li className={styles.tab_3}>
+                <p>Dynamic Plus</p>
+              </li>
+              </Link>
+              <span className={styles.seperator_line}></span>
+              <Link href={'/ecommerce'}>
+              <li className={styles.tab_4}>
+                <p>Ecommerce</p>
+              </li>
+              </Link>
+              <span className={styles.seperator_line}></span>
+              <Link href={'/eplus'}>
+              <li className={styles.tab_5}>
+                <p>E-Plus</p>
+              </li>
+              </Link>
+            </ul>
+          </div>
 
 
                 <div className={styles.compare}>
@@ -601,6 +610,8 @@ function Body() {
                         {displayUI === 'group_52374' && (
                           <div className={styles.group_52374}>
                             <div className={styles.frame_405}>
+
+
                               <div className={styles.frame_405_wrapper}>
 
                                 <div className={styles.frame_wrapper}>
@@ -686,7 +697,7 @@ function Body() {
                                           />
                                         </svg>
                                       </div>
-                                      <div className={styles.your_session_has_tim5}>650</div>
+                                      <div className={styles.your_session_has_tim5}>200</div>
                                     </div>
                                     <div className={styles.component_6}>
                                       <button className={styles.label}> <Link href={"/pricing"}>Get Started </Link> </button>
@@ -695,6 +706,11 @@ function Body() {
 
                                 </div>
                               </div>
+
+
+
+
+
 
                               <div className={styles.frame_wrapper}>
                                 <div className={styles.frame_402}>
@@ -777,7 +793,7 @@ function Body() {
                                         />
                                       </svg>
                                     </div>
-                                    <div className={styles.your_session_has_tim5}>850</div>
+                                    <div className={styles.your_session_has_tim5}>300</div>
                                   </div>
 
                                   <div className={styles.dynamic_get_started}>
@@ -867,7 +883,7 @@ function Body() {
                                         />
                                       </svg>
                                     </div>
-                                    <div className={styles.your_session_has_tim5}>650</div>
+                                    <div className={styles.your_session_has_tim5}>350</div>
                                   </div>
                                   <div className={styles.dynamic_get_started}>
                                     <div className={styles.component_6}>
@@ -956,7 +972,7 @@ function Body() {
                                         />
                                       </svg>
                                     </div>
-                                    <div className={styles.your_session_has_tim5}>1050</div>
+                                    <div className={styles.your_session_has_tim5}>400</div>
                                   </div>
                                   <div className={styles.component_6}>
                                     <button className={styles.label}> <Link href={"/ecommerce"}>Get Started</Link> </button>
@@ -970,7 +986,7 @@ function Body() {
                                 <div className={styles.frame_402}>
                                   <div className={styles.title}>
                                     <Link href={"/eplus"}>
-                                    <h1 className={styles.your_session_has_tim3_promo}>E-Plus</h1>
+                                      <h1 className={styles.your_session_has_tim3_promo}>E-Plus</h1>
                                     </Link>
                                   </div>
                                   <ol className={styles.list_wrapper}>
@@ -1076,7 +1092,7 @@ function Body() {
                                         <h1 className={styles.your_session_has_tim3_regular}>Static</h1>
                                       </Link>
                                     </div>
-                                    
+
                                     <ol className={styles.list_wrapper}>
                                       <ul className={styles.regular_disclaimer}>
                                         <div className={styles.save_up_to}>*Regular Price</div>
@@ -1243,7 +1259,7 @@ function Body() {
                                         />
                                       </svg>
                                     </div>
-                                    <div className={styles.your_session_has_tim5}>850</div>
+                                    <div className={styles.your_session_has_tim5}>500</div>
                                   </div>
 
                                   <div className={styles.dynamic_get_started}>
@@ -1334,7 +1350,7 @@ function Body() {
                                         />
                                       </svg>
                                     </div>
-                                    <div className={styles.your_session_has_tim5}>650</div>
+                                    <div className={styles.your_session_has_tim5}>550</div>
                                   </div>
                                   <div className={styles.dynamic_get_started}>
                                     <div className={styles.component_6}>
@@ -1423,7 +1439,7 @@ function Body() {
                                         />
                                       </svg>
                                     </div>
-                                    <div className={styles.your_session_has_tim5}>1050</div>
+                                    <div className={styles.your_session_has_tim5}>600</div>
                                   </div>
                                   <div className={styles.component_6}>
                                     <button className={styles.label}> <Link href={"/ecommerce"}>Get Started</Link> </button>
@@ -1437,8 +1453,8 @@ function Body() {
                                 <div className={styles.frame_402}>
                                   <div className={styles.title}>
                                     <Link
-                                    href={"/eplus"}>
-                                    <h1 className={styles.your_session_has_tim3_regular}>E-Plus</h1>
+                                      href={"/eplus"}>
+                                      <h1 className={styles.your_session_has_tim3_regular}>E-Plus</h1>
                                     </Link>
                                   </div>
                                   <ol className={styles.list_wrapper}>

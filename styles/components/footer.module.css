@@ -49,13 +49,13 @@ width: 100vw;
 }
 
 .sections {
-  width: 100vw;
+  width: 70vw;
   display: flex;
   flex-direction: row;
   list-style: none;
   transition: 0.2s;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: max-content;
 }
 
@@ -79,7 +79,7 @@ width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   width: max-content;
 }
 
@@ -154,6 +154,7 @@ width: 100vw;
 }
 
 .list {
+  width: min-content;
   text-align: center;
   list-style: none;
   padding: 0;
@@ -161,6 +162,7 @@ width: 100vw;
 }
 
 .item {
+  white-space: nowrap;
   cursor: pointer;
   font-size: 10px;
   color: rgb(143, 143, 143);
@@ -236,6 +238,7 @@ transform: scale(1.2);
   }
   
   .sections {
+    width: max-content;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -246,12 +249,16 @@ transform: scale(1.2);
   }
 
   .list_sections {
-    font-size: 7px;
+    font-size: 6px;
     list-style: none;
     display: flex;
     flex-direction: row;
     gap: 0px;
   }
+
+  .list { 
+   width: 50px;
+  } 
 
   .sectionTitle {
     font-size: 10px;
@@ -331,6 +338,7 @@ transform: scale(1.2);
 @media (min-width: 400px) and (max-width: 800px) and (orientation: portrait) {
 
 
+
   .sections {
     display: flex;
     flex-direction: column;
@@ -367,3 +375,4 @@ transform: scale(1.2);
   }
 
 }
+
